@@ -4,7 +4,7 @@ module Merit
       extend ActiveSupport::Concern
 
       included do
-        belongs_to :sash
+        belongs_to :sash, optional: true
       end
 
       def badge
